@@ -1,0 +1,96 @@
+/* General styles */
+body {
+    background: #ffffff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 9, 17);
+    border: 1px solid greenyellow;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.inputBoxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inputBoxContainer input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.inputBoxContainer input:focus {
+    border-color: greenyellow;
+    outline: none;
+}
+
+.inputBoxContainer button {
+    border-radius: 50%;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inputBoxContainer button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lastContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftContainer, .rightContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lastContainer img {
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 600px) {
+    .inputBoxContainer input {
+        width: 80%;
+    }
+    
+    .lastContainer {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
